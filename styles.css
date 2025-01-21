@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth !important;
+    scroll-snap-align: inherit;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .2);
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 75px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 35px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:black;
+}
+
+nav a:hover{
+    background-color: #6b6b6b;
+}
+
+#page1 {
+background-image:url(banff.jpg) ;
+background-size: 100%, 100vh;
+/* min-height: 100vh; */
+/* min-width: 100vh; */
+background-repeat: no-repeat;
+background-position: center;
+object-fit: cover;
+}
+
+#page2 {
+background-image:url(pv.jpg) ;
+background-size: 100%, 100vh;
+/* min-height: 100vh; */
+/* min-width: 100vh; */
+background-repeat: no-repeat;
+background-position: center;
+object-fit: cover;
+}
+
+#page3 {
+background-image:url(lima.jpg) ;
+background-size: 100%, 100vh;
+/* min-height: 100vh; */
+/* min-width: 100vh; */
+background-repeat: no-repeat;
+background-position: center;
+object-fit: cover;
+}
+
+.pages {
+    width: 100%;
+    height: 100%;
+    overflow:hidden ;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.places{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #000000;
+    scroll-snap-align: start;
+}
+
+.info {
+    max-width: 90ch;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .2);
+}
+
+.hdings {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+}
+
+@media all and (max-width:1118px) { 
+    .page1{
+        max-width: 100%;
+        
+        left: 50%;
+        right: 50%;
+        position: initial;
+    }
+    .page2{
+max-width: 100%;
+
+        left: 50%;
+        right: 50%;
+        position: initial;
+    }
+    .page3{
+max-width: 100%;
+
+        left: 50%;
+        right: 50%;
+        position: initial;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width:620px) { 
+    
+    .top {
+        display: flex;
+        flex-direction: column  ;
+        height: fit-content;
+    }
+
+    .navbar {
+        margin: 0 auto;
+        min-width: 12ch;
+        height:fit-content;
+    }
+
+    .places {
+        margin-right: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .info {
+        margin: 0  auto;
+        max-width: 35ch;
+    }
+
+    .page1 {
+        /* max-width: 100% */
+    }
+
+
+
+
+}
