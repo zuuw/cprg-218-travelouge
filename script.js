@@ -1,3 +1,1 @@
-addEventListener('click') {
-
-}
+// I tried to make a onclick function that would pop up a div block with 2 buttons to confirm or deny leaving the site to the hyperlinks on the location names... spent maybe 4 hours trying to get it tonight, haha. gonna try to figure it out before next class!
